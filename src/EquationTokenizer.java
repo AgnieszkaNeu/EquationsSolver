@@ -54,7 +54,7 @@ public class EquationTokenizer {
             }
 
             else {
-                throw new IllegalArgumentException("W działaniu znajduje się niepoprawny znak. Sprwadź poprawność zapisu działania.");
+                throw new IllegalArgumentException("There is an incorrect character in the equation. Please check the correctness of the equation.");
             }
         }
         return characters;

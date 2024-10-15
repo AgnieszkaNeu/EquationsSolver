@@ -6,23 +6,29 @@ public class Calculator {
 
     HashMap<Character,List<Object>> equationsMap;
     HashMap<Character, Double> results;
+    ONP onp;
 
     public Calculator(){
         this.equationsMap = new HashMap<>();
         this.results = new HashMap<>();
+        this.onp = new ONP();
     }
 
-    public void getResult(List <String> equations){
-
-        ONP onp = new ONP();
-        double result;
+    public HashMap<Character, Double> getResult(List <String> equations){
 
         for (String equation: equations) {
             List<Object> characters = EquationTokenizer.getTokens(equation);
             getVariable(characters);
         }
 
+        iterateOverEquations();
+        return results;
+    }
+
+    private void iterateOverEquations(){
+
         int x = equationsMap.size();
+        double result;
 
         while (!equationsMap.isEmpty() && x>=0 ){
             for (char variable: equationsMap.keySet()){
@@ -36,18 +42,11 @@ public class Calculator {
             removeSolved();
             x -= 1;
         }
-
-        if(results.isEmpty()){
-            System.out.println("Brak rozwiązania.");
-        }else {
-            System.out.println(results);
-        }
     }
-
     private void getVariable(List<Object> equation){
 
         if (!equation.get(1).equals('=') || !TypeChecker.isVariable((char) equation.get(0))){
-            throw new IllegalArgumentException("Niepoprawny zapis działania.");
+            throw new IllegalArgumentException("Incorrect syntax.");
         }
         char variable = (char) equation.get(0);
         equation.remove(0);
