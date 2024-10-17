@@ -26,7 +26,7 @@ b = -3 + (x - 2^3)/2
 3. Clone repository:
 
 ```
-git clone https://github.com/your-repo/equation-solver.git
+git clone https://github.com/AgnieszkaNeu/EquationsSolver.git
 ```
 
 3. Navigate to directory:
