@@ -14,34 +14,34 @@ operators like addition, subtraction, multiplication, division, and exponentiati
 
 ## How to use 
 
-- Prepare your text file with equations
+1. Prepare your text file with equations.
+Remember to write equation in form {variable} = {equation}
 
-## Instalation
-
-1. Clone repository:
-
-```
-```
-
-2. Navigate to directory:
-
-```
-```
-
-3. Compile the Java files:
-```
-javac Main.java
-```
-
-4.Run the program: 
-```
-java Mian.java directory_to.txt
-```
-
-Sample file
 ```
 a = 2 * x -b
 x = 5*(2*(2+1)^2)
 b = -3 + (x - 2^3)/2
 ```
-Remember to write variable first {variable} = {equation}
+
+3. Clone repository:
+
+```
+git clone https://github.com/your-repo/equation-solver.git
+```
+
+3. Navigate to directory:
+
+```
+cd EquationSolver
+```
+
+4. Compile the Java files:
+```
+javac Main.java
+```
+
+5. Run the program: 
+```
+java Mian.java directory_to.txt
+```
+
