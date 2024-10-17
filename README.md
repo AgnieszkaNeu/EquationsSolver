@@ -15,7 +15,7 @@ operators like addition, subtraction, multiplication, division, and exponentiati
 ## How to use 
 
 1. Prepare your text file with equations.
-Remember to write equation in form {variable} = {equation}
+Remember to write equation in form {variable} = {equation}. Example:
 
 ```
 a = 2 * x -b
