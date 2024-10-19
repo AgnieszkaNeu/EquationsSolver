@@ -23,7 +23,7 @@ x = 5*(2*(2+1)^2)
 b = -3 + (x - 2^3)/2
 ```
 
-3. Clone repository:
+2. Clone repository:
 
 ```
 git clone https://github.com/AgnieszkaNeu/EquationsSolver.git
